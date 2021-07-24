@@ -1,0 +1,47 @@
+{
+  "name": "incident_report",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon",
+    "start": "node -r ts-node/register/transpile-only -r tsconfig-paths/register ./dist/src/index.js",
+    "build": "tsc -p tsconfig.prod.json",
+    "test": "NODE_ENV=test  jest --coverage --forceExit"
+  },
+  "author": "rilwan majaagun",
+  "license": "ISC",
+  "dependencies": {
+    "@types/cors": "^2.8.12",
+    "@types/express": "^4.17.13",
+    "@types/jest": "^26.0.24",
+    "@types/morgan": "^1.9.3",
+    "@types/node": "^16.3.1",
+    "@types/twitter": "^1.7.1",
+    "axios": "^0.21.1",
+    "cors": "^2.8.5",
+    "dotenv-safe": "^8.2.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-import-resolver-typescript": "^2.4.0",
+    "eslint-plugin-prettier": "^3.4.0",
+    "express": "^4.17.1",
+    "jest": "^27.0.6",
+    "morgan": "^1.10.0",
+    "prettier": "^2.3.2",
+    "ts-jest": "^27.0.3",
+    "ts-node": "^10.1.0",
+    "tsconfig-paths": "^3.10.1",
+    "twitter": "^1.7.1",
+    "typescript": "^4.3.5",
+    "winston": "^3.3.3"
+  },
+  "devDependencies": {
+    "@types/dotenv-safe": "^8.1.2",
+    "@typescript-eslint/eslint-plugin": "^4.28.3",
+    "@typescript-eslint/parser": "^4.28.3",
+    "eslint": "^7.30.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-plugin-import": "^2.23.4",
+    "nodemon": "^2.0.12"
+  }
+}
