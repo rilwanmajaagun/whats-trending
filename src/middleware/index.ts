@@ -82,13 +82,11 @@ class Middleware {
       const {
         data: { articles },
       } = await makeGetRequest(url);
-      const news = articles.map((el: Record<string, any>) => {
-        return {
-          title: el.title,
-          description: el.description,
-          link: el.url,
-        };
-      });
+      const news = articles.map((el: Record<string, any>) => ({
+        title: el.title,
+        description: el.description,
+        link: el.url,
+      }));
       req.news = news;
       return next();
     } catch (error) {
